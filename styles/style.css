@@ -121,15 +121,131 @@ nav ul li:nth-of-type(4) a {
   transition: background-color 0.3s linear;
 }
 /* ================= Header Styles End ================= */
+
+/* ================= Curriculum Styles Start ================= */
+#curriculum {
+  padding: 60px 0;
+  background: url(../assets/bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#curriculum h2 {
+  color: var(--Black);
+  text-align: center;
+  font-size: 46px;
+  font-weight: 700;
+  line-height: 57.5px; /* 125% */
+}
+.card-container {
+  margin: 80px 0;
+  display: flex;
+  gap: 28.29px;
+}
+.card {
+  display: flex;
+  width: 367.805px;
+  height: 476.784px;
+  padding: 45px 40.668px 45px 40.878px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32.069px;
+  flex-shrink: 0;
+  border-radius: 18.864px;
+  border: 0.943px solid #def5ff;
+  background: linear-gradient(180deg, #def5ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.card h4 {
+  color: #202020;
+  text-align: center;
+  font-size: 24.523px;
+  font-weight: 700;
+  line-height: 30.654px; /* 125% */
+}
+.card p {
+  color: #808080;
+  text-align: center;
+  font-family: var(--Raleway);
+  font-size: 15.091px;
+  font-weight: 500;
+  line-height: 28.296px; /* 187.5% */
+}
+.card a {
+  color: #64c8ff;
+  text-align: center;
+  font-size: 15.091px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.card:nth-of-type(1) {
+  padding: 40px 40.668px 40px 40.878px;
+}
+.card:nth-of-type(2) {
+  border: 0.943px solid #fff4dc;
+  background: linear-gradient(180deg, #fff4dc 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.card:nth-of-type(2) a {
+  color: #F0AA00;
+}
+.card:nth-of-type(3) {
+  border: 0.943px solid #f2e8ff;
+  background: linear-gradient(180deg, #eee1ff 0%, rgba(255, 255, 255, 0) 40%),
+    #fff;
+  box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
+}
+.card:nth-of-type(3) a {
+   color: #8700FF;
+}
+.arrow-btn-container{
+ width: 100%;
+ display: flex;
+ gap: 12px;
+ justify-content: center;
+}
+.right,.left{
+    text-align: center;
+width: 60px;
+height: 60px;
+padding: 17px 0px 19px 0px;
+border-radius: 30px;
+background: var(--Orange);
+cursor: pointer;
+transition: background-color 0.3s linear;
+}
+.right:hover,.left:hover{
+
+background: #d48805;
+
+}
+.right:active,.left:active{
+
+transform: scale(0.98);
+}
+.right,.left i{
+color: #FFF;
+font-size: 24px;
+font-weight: 900;
+}
+/* ================= Curriculum Styles End ================= */
+
 /* ================= Global Styles Start ================= */
 /* ================= Global Styles End ================= */
 
 /* ================= Responsiv 576px Styles Start ================= */
 @media screen and (max-width: 576px) {
-  body {
-    padding: 0 16px;
-  }
   /* navbar  */
+  header {
+    padding: 0;
+  }
+  .navbar-container {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--Orange);
+  }
   .menubar {
     display: block;
     font-size: 30px;
@@ -149,6 +265,7 @@ nav ul li:nth-of-type(4) a {
   .banner-container {
     flex-direction: column-reverse;
     gap: 0;
+    padding: 0 16px;
   }
   .banner-img {
     padding-top: 30px;
