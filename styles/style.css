@@ -135,12 +135,12 @@ nav ul li:nth-of-type(4) a {
   text-align: center;
   font-size: 46px;
   font-weight: 700;
-  line-height: 57.5px; /* 125% */
 }
 .card-container {
   margin: 80px 0;
   display: flex;
   gap: 28.29px;
+  flex-wrap: wrap;
 }
 .card {
   display: flex;
@@ -190,7 +190,7 @@ nav ul li:nth-of-type(4) a {
   box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
 }
 .card:nth-of-type(2) a {
-  color: #F0AA00;
+  color: #f0aa00;
 }
 .card:nth-of-type(3) {
   border: 0.943px solid #f2e8ff;
@@ -199,37 +199,38 @@ nav ul li:nth-of-type(4) a {
   box-shadow: 0px 0px 28.296px 0.943px rgba(0, 0, 0, 0.05) inset;
 }
 .card:nth-of-type(3) a {
-   color: #8700FF;
+  color: #8700ff;
 }
-.arrow-btn-container{
- width: 100%;
- display: flex;
- gap: 12px;
- justify-content: center;
+.arrow-btn-container {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
 }
-.right,.left{
-    text-align: center;
-width: 60px;
-height: 60px;
-padding: 17px 0px 19px 0px;
-border-radius: 30px;
-background: var(--Orange);
-cursor: pointer;
-transition: background-color 0.3s linear;
+.right,
+.left {
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  padding: 17px 0px 19px 0px;
+  border-radius: 30px;
+  background: var(--Orange);
+  cursor: pointer;
+  transition: background-color 0.3s linear;
 }
-.right:hover,.left:hover{
-
-background: #d48805;
-
+.right:hover,
+.left:hover {
+  background: #d48805;
 }
-.right:active,.left:active{
-
-transform: scale(0.98);
+.right:active,
+.left:active {
+  transform: scale(0.98);
 }
-.right,.left i{
-color: #FFF;
-font-size: 24px;
-font-weight: 900;
+.right,
+.left i {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
 }
 /* ================= Curriculum Styles End ================= */
 
@@ -299,6 +300,42 @@ font-weight: 900;
     font-size: 16px;
     font-style: normal;
     padding: 10px 24px;
+  }
+
+  /* Curriculum  */
+
+  #curriculum {
+    padding: 40px 16px;
+    background-position: center;
+    background-size: cover;
+  }
+  #curriculum h2 {
+    font-size: 26px;
+  }
+  .card-container {
+    margin: 20px 0;
+    gap: 12px;
+    justify-content: center;
+  }
+  .card {
+    width: 100%;
+    height: 321px;
+    padding: 36px 28px;
+    gap: 22px;
+  }
+  .card img {
+    width: 95px;
+    height: 95px;
+  }
+  .card h4 {
+    font-size: 16.603px;
+  }
+  .card p {
+    font-size: 10.217px;
+    line-height: 19.158px; /* 187.5% */
+  }
+  .arrow-btn-container {
+    display: none;
   }
 }
 /* ================= Responsiv 576px Styles End ================= */
