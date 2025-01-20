@@ -339,10 +339,10 @@ nav ul li:nth-of-type(4) a {
   border-radius: 47.934px;
   transform: translateY(-55%);
 }
-.view-all{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+.view-all {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .view-all button {
   color: #fff;
@@ -352,6 +352,7 @@ nav ul li:nth-of-type(4) a {
   border-radius: 12px;
   background: var(--Black);
   padding: 10px 61px;
+  transition: all 0.3s linear;
 }
 
 /* ================= Stories Styles End ================= */
@@ -458,6 +459,54 @@ nav ul li:nth-of-type(4) a {
   }
   .arrow-btn-container {
     display: none;
+  }
+
+  /* stories  */
+
+  #stories {
+    padding: 40px 16px;
+  }
+  #stories h2 {
+    font-size: 26px;
+  }
+  .img-box-container {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: " two three" " four five";
+    gap: 10px;
+  }
+  .one {
+    display: none;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .img-box img {
+    width: 100%;
+  }
+  .two h4,
+  .three h4,
+  .four h4,
+  .five h4 {
+    font-size: 9.133px;
+    font-weight: 700;
+    width: 117.917px;
+    margin-left: 22px;
+    margin-bottom: 20px;
+    line-height: 17.125px; /* 187.5% */
+  }
+  .img-box button {
+    margin-left: 22px;
+    font-size: 9.133px;
+    font-weight: 500;
+    padding: 6.38px 11.876px 6.339px 11.174px;
+    transform: translateY(-75%);
+  }
+  .view-all button {
+    font-size: 16px;
+    padding: 6px 37px;
+    
   }
 }
 /* ================= Responsiv 576px Styles End ================= */
