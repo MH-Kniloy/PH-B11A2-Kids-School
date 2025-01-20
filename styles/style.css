@@ -48,7 +48,7 @@ header {
 .menubar {
   display: none;
 }
-.header-container {
+.navbar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -87,6 +87,39 @@ nav ul li:nth-of-type(4) a {
   color: #5d58ef;
   font-weight: 500;
 }
+.banner-container {
+  display: flex;
+  gap: 50px;
+}
+.banner-writting {
+  padding-top: 120px;
+  padding-bottom: 122px;
+}
+.banner-writting h1 {
+  color: var(--Black);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 61px;
+  margin-bottom: 24px;
+}
+.banner-writting h1 span:first-of-type {
+  color: var(--Orange);
+}
+.banner-writting h1 span:last-of-type {
+  color: var(--SkyBlue);
+}
+.banner-writting p {
+  color: var(--Black);
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+.banner-writting button {
+  background: var(--Black);
+  font-weight: 700;
+  padding: 12px 47px;
+  transition: background-color 0.3s linear;
+}
 /* ================= Header Styles End ================= */
 /* ================= Global Styles Start ================= */
 /* ================= Global Styles End ================= */
@@ -96,6 +129,7 @@ nav ul li:nth-of-type(4) a {
   body {
     padding: 0 16px;
   }
+  /* navbar  */
   .menubar {
     display: block;
     font-size: 30px;
@@ -104,12 +138,50 @@ nav ul li:nth-of-type(4) a {
   header .logo p {
     display: none;
   }
-  nav{
+  nav {
     display: none;
   }
-  .navbtn{
+  .navbtn {
     display: none;
   }
 
+  /* banner  */
+  .banner-container {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .banner-img {
+    padding-top: 30px;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .banner-writting {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .banner-writting h1 {
+    font-size: 32px;
+    font-style: normal;
+    line-height: normal;
+    width: 357px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+  .banner-writting p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 357px;
+    margin: 0 auto;
+    margin-bottom: 18px;
+  }
+  .banner-writting button {
+    font-size: 16px;
+    font-style: normal;
+    padding: 10px 24px;
+  }
 }
 /* ================= Responsiv 576px Styles End ================= */
