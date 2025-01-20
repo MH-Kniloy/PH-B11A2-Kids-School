@@ -1,0 +1,25 @@
+/* ================= Custom Variables Start ================= */
+:root{
+    --Black:#111111;
+    --Orange:#FEA301;
+    --SkyBlue:#01ACFD;
+    --White:#F7F7F7;
+    --Raleway:font-family: "Raleway", serif;
+    --QuickSand:font-family: "Quicksand", serif;
+}
+/* ================= Custom Variables End ================= */
+/* ================= Global Styles Start ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: var(--QuickSand)
+}
+/* ================= Global Styles End ================= */
+
+/* ================= Global Styles Start ================= */
+/* ================= Global Styles End ================= */
+/* ================= Global Styles Start ================= */
+/* ================= Global Styles End ================= */
