@@ -415,7 +415,7 @@ footer {
   font-weight: 700;
   margin-bottom: 32px;
 }
-.f-socials{
+.f-socials {
   display: flex;
   gap: 10px;
 }
@@ -565,6 +565,42 @@ footer {
   .view-all button {
     font-size: 16px;
     padding: 6px 37px;
+  }
+
+  /* footer  */
+  footer {
+    padding: 65px 16px;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .footer-img img {
+    width: 69.227px;
+    height: 69.227px;
+  }
+  .footer-img h4 {
+    font-size: 35.73px;
+    line-height: 33.497px; /* 93.75% */
+  }
+  .footer-logo p {
+    width: 357px;
+    font-size: 16px;
+    margin-top: 24px;
+  }
+  .footer-menu h3 {
+    font-size: 20.348px;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+  .f-menubar ul li a {
+    font-size: 16.957px;
+  }
+  .f-menubar ul li {
+    margin-bottom: 16px;
+  }
+  .footer-socials h5 {
+    font-size: 22.043px;
   }
 }
 /* ================= Responsiv 576px Styles End ================= */
